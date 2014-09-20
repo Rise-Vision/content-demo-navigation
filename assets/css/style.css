@@ -1,0 +1,61 @@
+html, 
+body,
+#myCarousel,
+.item,
+iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body {
+    font-family: 'Oswald';
+    color: #fff;
+	position: relative;
+}
+
+a {
+	color: #868686;
+	text-decoration: none;
+}
+
+/*#myCarousel .item iframe {z-index: -1;position:relative;}*/
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active { opacity: 1 }
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.toggle-menu {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 999999;
+	background: none;
+	border: none;
+}
+.toggle-menu:focus {outline: none;}
+.toggle-menu i {
+	font-size: 30px;
+	position:relative;
+	left:-11px;
+	bottom:-10px;
+}
+.fa-rotate-45 {
+    -ms-transform:rotate(45deg); /* IE 9 */
+    -webkit-transform:rotate(45deg); /* Chrome, Safari, Opera */
+    transform:rotate(45deg); /* Standard syntax */
+}
