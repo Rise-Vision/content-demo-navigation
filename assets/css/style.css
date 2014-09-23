@@ -54,6 +54,7 @@ a {
 	position:relative;
 	left:-11px;
 	bottom:-10px;
+    color:#d8d8d8;
 }
 .fa-rotate-45 {
     -ms-transform:rotate(45deg); /* IE 9 */
@@ -61,6 +62,13 @@ a {
     transform:rotate(45deg); /* Standard syntax */
 }
 @media (min-width: 1920px) {
+	.toggle-menu i {font-size:40px;}
+}
+@media (min-width: 2240px) {
+	.toggle-menu i {font-size:80px;left:-20px;bottom:-21px;}
+
+    
+}@media (min-width: 1920px) {
 	.toggle-menu i {font-size:40px;}
 }
 @media (min-width: 3840px) {
