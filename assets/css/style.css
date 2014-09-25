@@ -47,13 +47,16 @@ a {
 	z-index: 999999;
 	background: none;
 	border: none;
+    width: 60px;
+    height: 100px;
+    align:left;
 }
 .toggle-menu:focus {outline: none;}
 .toggle-menu i {
 	font-size: 30px;
 	position:relative;
-	left:-11px;
-	bottom:-10px;
+	left:-20px;
+	bottom:-40px;
     color:#d8d8d8;
 }
 .fa-rotate-45 {
@@ -69,5 +72,5 @@ a {
 }
 
 @media (min-width: 2240px) {
-	.toggle-menu i {font-size:80px;left:-20px;bottom:-21px;}
+	.toggle-menu i {font-size:80px;left:-20px;bottom:-30px;}
 }
