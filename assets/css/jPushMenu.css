@@ -17,6 +17,11 @@
 	cursor: pointer;
 }
 
+/*media query for 4k displays*/
+@media (min-width: 2240px) {
+    .cbp-spmenu ul li {font-size: 2.2em;}
+}
+
 .cbp-spmenu ul li:hover,
 .cbp-spmenu ul li.active {
 	background: #fff;
@@ -34,12 +39,7 @@
 
 /*media query for 4k displays*/
 @media (min-width: 2240px) {
-	.cbp-spmenu-vertical {width: 440px;}
-    .cbp-spmenu ul li {font-size: 2.2em;}
-    .cbp-spmenu-left {left: -440px;}
-    .cbp-spmenu-right {right: -440px;}
-    .cbp-spmenu-push-toright {left: 440px;}
-    .cbp-spmenu-push-toleft {left: -440px;}
+	.cbp-spmenu-vertical {width: 440px;} 
 }
 
 .cbp-spmenu-vertical ul li {
@@ -52,6 +52,11 @@
 
 .cbp-spmenu-left {
 	left: -240px;
+}
+
+/*media query for 4k displays*/
+@media (min-width: 2240px) {
+	.cbp-spmenu-left {left: -440px;} 
 }
 
 .cbp-spmenu-right {

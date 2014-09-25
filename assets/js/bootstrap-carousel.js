@@ -146,7 +146,7 @@
             that.$element.trigger(slidEvent)
           }, 0)
         })
-        .emulateTransitionEnd($active.css('transition-duration').slice(0, -1) * 1000)
+        .emulateTransitionEnd($active.css('transition-duration').slice(0, -1))
     } else {
       $active.removeClass('active')
       $next.addClass('active')
