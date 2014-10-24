@@ -27,7 +27,7 @@
 <body>
 	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
 		<ul class="myCarousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="hidden myCarousel-target active">Null</li>
+			<li data-target="#myCarousel" data-slide-to="0" class="myCarousel-target active hidden">Null</li>
 			<li data-target="#myCarousel" data-slide-to="1" class="myCarousel-target">Events</li>
 			<li data-target="#myCarousel" data-slide-to="2" class="myCarousel-target">Restaurant Promotions</li>
 			<li data-target="#myCarousel" data-slide-to="3" class="myCarousel-target">Restaurant Menuboard</li>
@@ -35,11 +35,11 @@
 			<!--<li data-target="#myCarousel" data-slide-to="5" class="myCarousel-target">Education K­12</li>-->
 		</ul>
 	</nav>
-	<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+	<div id="myCarousel" class="carousel slide fade" data-ride="carousel">
 	    <!-- Carousel items -->
 	    <div class="carousel-inner">
-			<div data-slide-no="0" data-interval="0" class="hidden item carousel-item active"></div>
-	        <div data-slide-no="1" data-interval="30000" class="item carousel-item">
+			<div data-slide-no="0" data-interval="0" class="item carousel-item active hidden"></div>
+	        <div data-slide-no="1" data-interval="30000" class="item carousel-item second">
 				<iframe src="http://commondatastorage.googleapis.com/risemedialibrary-395c64e5-2930-460b-881e-009aabb157df/content-templates/events/events.html"></iframe>
 			</div>
 	        <div data-slide-no="2" data-interval="30000" class="item carousel-item">
@@ -75,7 +75,7 @@
 			    $(".myCarousel-target.active").removeClass("active");
 			    $(".myCarousel-indicators [data-slide-to=" + to_slide + "]").addClass("active");
 			});
-			$(".carousel-target").on("click", function() {
+			$(".myCarousel-target").on("click", function() {
 			    $(this).preventDefault();
 			    $(".carousel").carousel(parseInt($(this).attr("data-slide-to")));
 			    $(".myCarousel-target.active").removeClass("active");
