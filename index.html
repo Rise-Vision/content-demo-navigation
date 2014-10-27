@@ -25,6 +25,7 @@
 			<!--<li data-target="#myCarousel" data-slide-to="5" class="myCarousel-target">Education K­12</li>-->
 		</ul>
 	</nav>
+	<div class="transparent-box"></div>
 	<div id="myCarousel" class="carousel slide fade" data-ride="carousel">
 	    <!-- Carousel items -->
 	    <div class="carousel-inner">
@@ -52,12 +53,23 @@
 	<script src="assets/js/bootstrap-carousel.js"></script>
 	<script src="assets/js/jPushMenu.js"></script>
 	<script>
+		var hasBeenClicked = false;
 		jQuery(document).ready(function($) {
 			$('.toggle-menu').jPushMenu({
 				closeOnClickOutside: false,
 				closeOnClickInside: false,
 				closeOnClickLink: false
 			});
+			
+			$(document).click(function() { 
+				if (!hasBeenClicked) {
+					$('.cbp-spmenu').removeClass("cbp-spmenu-open");
+					$('.toggle-menu').removeClass("menu-active");
+					$('.toggle-menu').find("i").removeClass("fa-arrow-circle-down");
+					$('.toggle-menu').find("i").addClass("fa-arrow-circle-up");
+				}
+				hasBeenClicked = false;
+			 });
 			
 			$(".carousel").on("slid.bs.carousel", function() {
 				var to_slide;
@@ -66,6 +78,7 @@
 			    $(".myCarousel-indicators [data-slide-to=" + to_slide + "]").addClass("active");
 			});
 			$(".myCarousel-target").on("click", function() {
+				hasBeenClicked = true;
 			    $(this).preventDefault();
 			    $(".carousel").carousel(parseInt($(this).attr("data-slide-to")));
 			    $(".myCarousel-target.active").removeClass("active");
