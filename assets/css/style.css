@@ -45,8 +45,7 @@ a {
   display:block !important;
   z-index:1;
 }
-.carousel.fade .item:first-child {width:0!important;height:0!important;display:none!important;}
-.carousel.fade .item.second {top:auto;position:relative;}
+.carousel.fade .item:first-child {top:auto;position:relative;}
 .carousel.fade .item.active {
   opacity: 1;
   -moz-transition: opacity ease-in-out .2s;

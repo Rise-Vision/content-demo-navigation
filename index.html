@@ -17,34 +17,28 @@
 <body>
 	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
 		<ul class="myCarousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="myCarousel-target active hidden">Null</li>
-			<li data-target="#myCarousel" data-slide-to="1" class="myCarousel-target">Events</li>
-			<li data-target="#myCarousel" data-slide-to="2" class="myCarousel-target">Restaurant Promotions</li>
-			<li data-target="#myCarousel" data-slide-to="3" class="myCarousel-target">Restaurant Menuboard</li>
-			<li data-target="#myCarousel" data-slide-to="4" class="myCarousel-target">School Calendar</li>
-			<!--<li data-target="#myCarousel" data-slide-to="5" class="myCarousel-target">Education K­12</li>-->
+			<li data-target="#myCarousel" data-slide-to="0" class="myCarousel-target active">Events</li>
+			<li data-target="#myCarousel" data-slide-to="1" class="myCarousel-target">Restaurant Promotions</li>
+			<li data-target="#myCarousel" data-slide-to="2" class="myCarousel-target">Restaurant Menuboard</li>
+			<li data-target="#myCarousel" data-slide-to="3" class="myCarousel-target">School Calendar</li>
 		</ul>
 	</nav>
 	<div class="transparent-box"></div>
 	<div id="myCarousel" class="carousel slide fade" data-ride="carousel">
 	    <!-- Carousel items -->
 	    <div class="carousel-inner">
-			<div data-slide-no="0" data-interval="0" class="item carousel-item active hidden"></div>
-	        <div data-slide-no="1" data-interval="30000" class="item carousel-item second">
+			<div data-slide-no="0" data-interval="30000" class="item carousel-item active">
 				<iframe src="http://commondatastorage.googleapis.com/risemedialibrary-395c64e5-2930-460b-881e-009aabb157df/content-templates/events/events.html"></iframe>
 			</div>
-	        <div data-slide-no="2" data-interval="30000" class="item carousel-item">
+	        <div data-slide-no="1" data-interval="30000" class="item carousel-item">
 	        	<iframe src="http://commondatastorage.googleapis.com/risemedialibrary-395c64e5-2930-460b-881e-009aabb157df/content-templates/restaurant-promotion/restaurant-promotion.html"></iframe>
 	        </div>
-	        <div data-slide-no="3" data-interval="30000" class="item carousel-item">
+	        <div data-slide-no="2" data-interval="30000" class="item carousel-item">
 	            <iframe src="http://commondatastorage.googleapis.com/risemedialibrary-395c64e5-2930-460b-881e-009aabb157df/content-templates/restaurant-menuboard/restaurant-menuboard.html"></iframe>
 	        </div>
-			<div data-slide-no="4" data-interval="30000" class="item carousel-item">
+			<div data-slide-no="3" data-interval="30000" class="item carousel-item">
 	            <iframe src="http://commondatastorage.googleapis.com/risemedialibrary-395c64e5-2930-460b-881e-009aabb157df/content-templates/school-calendar/school-calendar.html"></iframe>
 	        </div>
-			<!--<div data-slide-no="5" data-interval="30000" class="item carousel-item">
-	            <iframe src="http://universityfinancelab.com"></iframe>
-	        </div>-->
 	    </div>
 	</div>
 	<button class="toggle-menu menu-left"><i class="fa fa-arrow-circle-up fa-rotate-45"></i></button>
@@ -87,13 +81,13 @@
 			
 			var t;
 			var start = $('#myCarousel').find('.active').attr('data-interval');
-			t = setTimeout("$('#myCarousel').carousel({interval: 1000});", start-1000);
+			t = setTimeout("$('#myCarousel').carousel({interval: 30000});", start-30000);
 			$('#myCarousel').on('slid.bs.carousel', function () {  
 			     clearTimeout(t);  
 			     var duration = $(this).find('.active').attr('data-interval');
 
 			     $('#myCarousel').carousel('pause');
-			     t = setTimeout("$('#myCarousel').carousel();", duration-1000);
+			     t = setTimeout("$('#myCarousel').carousel();", duration-30000);
 			});
 			
 			$('.toggle-menu').click(function(){
