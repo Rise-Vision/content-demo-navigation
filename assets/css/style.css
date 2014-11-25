@@ -29,6 +29,7 @@ a {
 	top: 0;
 	left: 0;
 	z-index: 998;
+	display: none;
 }
 
 .carousel.fade {opacity: 1;}
