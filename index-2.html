@@ -18,52 +18,30 @@
 <body>
 	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
 		<ul class="myCarousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="myCarousel-target active">Events</li>
-			<li data-target="#myCarousel" data-slide-to="1" class="myCarousel-target">Restaurant Promotions</li>
-			<li data-target="#myCarousel" data-slide-to="2" class="myCarousel-target">Restaurant Menuboard</li>
-			<li data-target="#myCarousel" data-slide-to="3" class="myCarousel-target">School Calendar</li>
-            <li data-target="#myCarousel" data-slide-to="4" class="myCarousel-target">School Lunch</li>
-            <li data-target="#myCarousel" data-slide-to="5" class="myCarousel-target">Teacher Profile</li>
-            <li data-target="#myCarousel" data-slide-to="6" class="myCarousel-target">Timeless</li>
-			<li data-target="#myCarousel" data-slide-to="7" class="myCarousel-target">Retail</li>
-			<li data-target="#myCarousel" data-slide-to="8" class="myCarousel-target">Elegance</li>
-			<li data-target="#myCarousel" data-slide-to="9" class="myCarousel-target">Hotel</li>
+			<li data-target="#myCarousel" data-slide-to="0" data-vid-url="http://rise-vision.github.io/content-templates/events/events.html" class="myCarousel-target active">Events</li>
+			<li data-target="#myCarousel" data-slide-to="1" data-vid-url="http://rise-vision.github.io/content-templates/restaurant-promotion/restaurant-promotion" class="myCarousel-target">Restaurant Promotions</li>
+			<li data-target="#myCarousel" data-slide-to="2" data-vid-url="http://rise-vision.github.io/content-templates/restaurant-menuboard/restaurant-menuboard.html" class="myCarousel-target">Restaurant Menuboard</li>
+			<li data-target="#myCarousel" data-slide-to="3" data-vid-url="http://rise-vision.github.io/content-templates/school-calendar/school-calendar.html" class="myCarousel-target">School Calendar</li>
+            <li data-target="#myCarousel" data-slide-to="4" data-vid-url="http://rise-vision.github.io/content-templates/school-lunch/school-lunch.html" class="myCarousel-target">School Lunch</li>
+            <li data-target="#myCarousel" data-slide-to="5" data-vid-url="http://rise-vision.github.io/content-templates/teacher-profile/teacher-profile.html" class="myCarousel-target">Teacher Profile</li>
+            <li data-target="#myCarousel" data-slide-to="6" data-vid-url="http://swbloom.github.io/" class="myCarousel-target">Timeless</li>
+			<li data-target="#myCarousel" data-slide-to="7" data-vid-url="http://rise-vision.github.io/content-templates/retail/retail.html" class="myCarousel-target">Retail</li>
+			<li data-target="#myCarousel" data-slide-to="8" data-vid-url="http://pcsandford.github.io/" class="myCarousel-target">Elegance</li>
 		</ul>
 	</nav>
 	<div class="transparent-box"></div>
 	<div id="myCarousel" class="carousel slide fade" data-ride="carousel">
 	    <!-- Carousel items Count Starts at 0-->
 	    <div class="carousel-inner">
-			<div data-slide-no="0" data-interval="30000" class="item carousel-item active">
-				<iframe src="http://rise-vision.github.io/content-templates/events/events.html"></iframe>
-			</div>
-	        <div data-slide-no="1" data-interval="30000" class="item carousel-item">
-	        	<iframe src="http://rise-vision.github.io/content-templates/restaurant-promotion/restaurant-promotion.html"></iframe>
-	        </div>
-	        <div data-slide-no="2" data-interval="30000" class="item carousel-item">
-	            <iframe src="http://rise-vision.github.io/content-templates/restaurant-menuboard/restaurant-menuboard.html"></iframe>
-	        </div>
-			<div data-slide-no="3" data-interval="30000" class="item carousel-item">
-	            <iframe src="http://rise-vision.github.io/content-templates/school-calendar/school-calendar.html"></iframe>
-	        </div>
-            <div data-slide-no="4" data-interval="30000" class="item carousel-item">
-	            <iframe src="http://rise-vision.github.io/content-templates/school-lunch/school-lunch.html"></iframe>
-	        </div>
-            <div data-slide-no="5" data-interval="30000" class="item carousel-item">
-	            <iframe src="http://rise-vision.github.io/content-templates/teacher-profile/teacher-profile.html"></iframe>
-	        </div>
-            <div data-slide-no="6" data-interval="30000" class="item carousel-item">
-	            <iframe src="http://swbloom.github.io/"></iframe>
-	        </div>
-			<div data-slide-no="7" data-interval="30000" class="item carousel-item">
-	            <iframe src="http://rise-vision.github.io/content-templates/retail/retail.html"></iframe>
-	        </div>
-			<div data-slide-no="8" data-interval="30000" class="item carousel-item">
-	            <iframe src="http://pcsandford.github.io/"></iframe>
-	        </div>
-			<div data-slide-no="9" data-interval="60000" class="item carousel-item">
-	            <iframe src="http://swbloom.github.io/hotel/"></iframe>
-	        </div>
+			<div data-slide-no="0" data-interval="30000" class="item carousel-item active"><iframe src="http://rise-vision.github.io/content-templates/events/events.html"></iframe></div>
+	        <div data-slide-no="1" data-interval="30000" class="item carousel-item"></div>
+	        <div data-slide-no="2" data-interval="30000" class="item carousel-item"></div>
+			<div data-slide-no="3" data-interval="30000" class="item carousel-item"></div>
+            <div data-slide-no="4" data-interval="30000" class="item carousel-item"></div>
+            <div data-slide-no="5" data-interval="30000" class="item carousel-item"></div>
+            <div data-slide-no="6" data-interval="30000" class="item carousel-item"></div>
+			<div data-slide-no="7" data-interval="30000" class="item carousel-item"></div>
+			<div data-slide-no="8" data-interval="30000" class="item carousel-item"></div>
 			
 	    </div>
 	</div>
@@ -93,9 +71,13 @@
 			
 			$(".carousel").on("slid.bs.carousel", function() {
 				var to_slide;
+				var vid_url;
 				to_slide = $(".carousel-item.active").attr("data-slide-no");
+				vid_url = $(".myCarousel-indicators [data-slide-to=" + to_slide + "]").attr("data-vid-url");
+				$(".carousel-item iframe").remove();
 			    $(".myCarousel-target.active").removeClass("active");
 			    $(".myCarousel-indicators [data-slide-to=" + to_slide + "]").addClass("active");
+				$(".carousel-item.active").append('<iframe src="'+vid_url+'"></iframe>');
 			});
 			$(".myCarousel-target").on("click", function() {
 				hasBeenClicked = true;
