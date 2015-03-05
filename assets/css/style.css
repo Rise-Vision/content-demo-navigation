@@ -81,27 +81,17 @@ a {
 	z-index: 999999 !important;
 	background: none;
 	border: none;
-    width: 60px;
-    height: 80px;
-    align:left;
-}
-.toggle-menu img{
-	position: absolute;
-	left: 0;
-	bottom: 0;
     width: 80px;
     height: 100px;
     align:left;
-	opacity: .5;
-	z-index: 999999 !important;
 }
 
 .toggle-menu:focus {outline: none;}
 .toggle-menu i {
-	font-size: 30px;
+	font-size: 26px;
 	position:relative;
-	left:0px;
-	bottom:-15px;
+	left:-10px;
+	bottom:-20px;
     color:#d8d8d8;
 	z-index: 0 !important;
 	opacity: 1;
@@ -115,9 +105,9 @@ a {
 .hidden {display:none!important;opacity:0!important;z-index:-1!important;}
 
 @media (min-width: 1920px) {
-	.toggle-menu i {font-size:40px;}
+	.toggle-menu i {font-size:36px;}
 }
 
 @media (min-width: 2240px) {
-	.toggle-menu i {font-size:80px;left:-20px;bottom:-30px;}
+	.toggle-menu i {font-size:76px;left:-20px;bottom:-30px;}
 }
