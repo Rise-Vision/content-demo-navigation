@@ -88,10 +88,10 @@ a {
 
 .toggle-menu:focus {outline: none;}
 .toggle-menu i {
-	font-size: 26px;
+	font-size: 30px;
 	position:relative;
-	left:-10px;
-	bottom:-20px;
+	left:-30px;
+	bottom:-40px;
     color:#d8d8d8;
 	z-index: 0 !important;
 	opacity: 1;
@@ -105,9 +105,9 @@ a {
 .hidden {display:none!important;opacity:0!important;z-index:-1!important;}
 
 @media (min-width: 1920px) {
-	.toggle-menu i {font-size:36px;}
+	.toggle-menu i {font-size:40px;}
 }
 
 @media (min-width: 2240px) {
-	.toggle-menu i {font-size:76px;left:-20px;bottom:-30px;}
+	.toggle-menu i {font-size:80px;left:-20px;bottom:-30px;}
 }
