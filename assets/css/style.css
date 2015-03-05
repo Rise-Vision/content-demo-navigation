@@ -86,11 +86,11 @@ a {
     align:left;
 	background-color: grey;
 }
-.toggle-menu:focus {outline: none;}
+/*.toggle-menu:focus {outline: 0;}*/
 .toggle-menu i {
 	font-size: 30px;
 	position:relative;
-	left:-20px;
+	left:-30px;
 	bottom:-40px;
     color:#d8d8d8;
 }
