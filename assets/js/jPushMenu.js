@@ -36,7 +36,7 @@
 			}
 			
 
-			$(this).toggleClass(o.activeClass);
+			$(this).toggleClass(o.activeClass, '#nav-icon2');
 			$(target).toggleClass(o.menuOpenClass);
 			
 			if($(this).is('.'+o.pushBodyClass)) {

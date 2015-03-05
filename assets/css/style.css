@@ -81,8 +81,8 @@ a {
 	z-index: 999999 !important;
 	background: none;
 	border: none;
-    width: 80px;
-    height: 100px;
+    width: 60px;
+    height: 80px;
     align:left;
 }
 .toggle-menu img{
@@ -101,7 +101,7 @@ a {
 	font-size: 30px;
 	position:relative;
 	left:0px;
-	bottom:0px;
+	bottom:-15px;
     color:#d8d8d8;
 	z-index: 0 !important;
 	opacity: 1;
