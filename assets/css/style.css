@@ -100,8 +100,8 @@ a {
 .toggle-menu i {
 	font-size: 30px;
 	position:relative;
-	left:-30px;
-	bottom:-40px;
+	left:0px;
+	bottom:0px;
     color:#d8d8d8;
 	z-index: 0 !important;
 	opacity: 1;
