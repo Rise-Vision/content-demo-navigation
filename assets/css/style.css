@@ -78,12 +78,13 @@ a {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	z-index: 999999;
+	z-index: 999999 !important;
 	background: none;
 	border: none;
-    width: 60px;
+    width: 80px;
     height: 100px;
     align:left;
+	background-color: grey;
 }
 .toggle-menu:focus {outline: none;}
 .toggle-menu i {
