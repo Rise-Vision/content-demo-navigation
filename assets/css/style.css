@@ -86,13 +86,14 @@ a {
     align:left;
 	background-color: grey;
 }
-/*.toggle-menu:focus {outline: 0;}*/
+.toggle-menu:focus {outline: none;}
 .toggle-menu i {
 	font-size: 30px;
 	position:relative;
 	left:-30px;
 	bottom:-40px;
     color:#d8d8d8;
+	z-index: 9 !important;
 }
 .fa-rotate-45 {
     -ms-transform:rotate(45deg); /* IE 9 */
