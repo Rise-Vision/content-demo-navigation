@@ -93,6 +93,7 @@ a {
     height: 100px;
     align:left;
 	opacity: .5;
+	z-index: 999999 !important;
 }
 
 .toggle-menu:focus {outline: none;}
