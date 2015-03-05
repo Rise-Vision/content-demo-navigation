@@ -101,20 +101,6 @@ a {
 
 .hidden {display:none!important;opacity:0!important;z-index:-1!important;}
 
-#scroll-style::-webkit-scrollbar-track {
-	background: transparent;
-}
-
-#scroll-style::-webkit-scrollbar {
-	width: 6px;
-	background: transparent;
-}
-
-#scroll-style::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
-  background: transparent;
-}
-
 @media (min-width: 1920px) {
 	.toggle-menu i {font-size:40px;}
 }
